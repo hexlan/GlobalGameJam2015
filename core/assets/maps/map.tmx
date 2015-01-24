@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="48" tileheight="48" nextobjectid="1">
+ <tileset firstgid="1" name="TileSheet" tilewidth="48" tileheight="48">
+  <image source="TileSheet.png" width="240" height="240"/>
+=======
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="48" tileheight="48" nextobjectid="1">
  <tileset firstgid="1" name="TileSheet" tilewidth="48" tileheight="48">
   <image source="../Documents/GlobalGameJam2015/core/assets/maps/TileSheet.png" width="240" height="240"/>
+>>>>>>> FETCH_HEAD
   <tile id="0">
    <properties>
     <property name="blocked" value=""/>
@@ -108,9 +114,15 @@
    </properties>
   </tile>
  </tileset>
+<<<<<<< HEAD
+ <layer name="Tile Layer 1" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlksKgDAMBeMHq6igVrz/UW2RbqSSLF5rsC5mPSRp8mqJaMrM6ugdR2a63/uIKazer3g3Rw2mEXgXMIOgh95rwGjy3nfQe1sw0not4e/+LPCWsL8VXXu2Z/aO9OevRm+4CVrrDe+Vywm0N7xX7o5onW+sb1y2IryxvEL0h/PG5sXdfIT3rfmm9Kb413H4PDoBENQ9rw==
+=======
  <layer name="Tile Layer 1" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJwTY2BgEKMSZqOiWfQ2jwkPpqX7kO0RobJ/cfmNFnYMBUxK3I7i0XhiRHMD8yAKl4GOIxgGAIrWH58=
+>>>>>>> FETCH_HEAD
   </data>
  </layer>
 </map>
