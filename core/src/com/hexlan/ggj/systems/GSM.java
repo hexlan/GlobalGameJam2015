@@ -4,6 +4,7 @@ import java.util.Stack;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.hexlan.ggj.gamestates.GameState;
+import com.hexlan.ggj.gamestates.PlayState;
 
 public class GSM {
 
@@ -11,6 +12,7 @@ public class GSM {
 	
 	public GSM() {
 		states = new Stack<GameState>();
+		states.push(new PlayState(this));
 	}
 	
 	public void push(GameState s) {
@@ -24,6 +26,7 @@ public class GSM {
 		states.push(s);
 	}
 	public void update(float dt){
+		states.peek().handleInput();
 		states.peek().update(dt);
 	}
 	
