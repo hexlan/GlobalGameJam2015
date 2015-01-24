@@ -3,22 +3,23 @@ package com.hexlan.ggj.systems;
 import java.util.Stack;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.hexlan.ggj.gamestates.GameState;
 
 public class GSM {
 
-	private Stack<State> states;
+	private Stack<GameState> states;
 	
 	public GSM() {
-		states = new Stack<State>();
+		states = new Stack<GameState>();
 	}
 	
-	public void push(State s) {
+	public void push(GameState s) {
 		states.push(s);
 	}
 	public void pop() {
 		states.pop();
 	}
-	public void set(State s) {
+	public void set(GameState s) {
 		states.pop();
 		states.push(s);
 	}

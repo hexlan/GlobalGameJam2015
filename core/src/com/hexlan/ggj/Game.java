@@ -3,12 +3,12 @@ package com.hexlan.ggj;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.hexlan.ggj.systems.GSM;
-import com.hexlan.ggj.systems.TestState;
 
 public class Game extends ApplicationAdapter {
+	public static final int WIDTH = 800;
+	public static final int HEIGHT = 600;
 	private SpriteBatch sb;
 	private GSM gsm;
 	@Override
@@ -16,7 +16,6 @@ public class Game extends ApplicationAdapter {
 		sb = new SpriteBatch();
 		
 		gsm = new GSM();
-		gsm.push(new TestState(gsm));
 	}
 
 	@Override
