@@ -1,12 +1,24 @@
 package com.hexlan.ggj.entities;
 
+<<<<<<< Updated upstream
 
 public class Player extends Character
 {
 
+=======
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
+
+public class Player extends Character
+{
+	private Sound jumpSound;
+	
+>>>>>>> Stashed changes
 	public Player()
 	{
 		super();
+		
+		jumpSound = Gdx.audio.newSound(Gdx.files.internal("sound/Jump.wav"));
 	}
 	
 	private void getNextPosition()
@@ -20,6 +32,7 @@ public class Player extends Character
 			fallCounter = 0;
 			dy = 18;
 			falling = true;
+			jumpSound.play();
 		}
 		
 		if(falling) 

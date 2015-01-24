@@ -9,8 +9,8 @@ import com.hexlan.ggj.systems.GSM;
 public class Game extends ApplicationAdapter 
 {
 	
-	public static final int WIDTH = 1280;
-	public static final int HEIGHT = 768;
+	public static final int WIDTH = 900;
+	public static final int HEIGHT = 600;
 	
 	private SpriteBatch sb;
 	private GSM gsm;

@@ -2,6 +2,7 @@ package com.hexlan.ggj.gamestates;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -24,6 +25,8 @@ public class PlayState extends GameState
 	private OrthographicCamera camera;
 
 	private Player player;
+	private Music music;
+	private long songID;
 	
 	ShapeRenderer sr;
 	
@@ -50,16 +53,16 @@ public class PlayState extends GameState
         sr = new ShapeRenderer();
 		sr.setColor(Color.CYAN);
 		Gdx.gl.glLineWidth(3);
+		
+		music = Gdx.audio.newMusic(Gdx.files.internal("sound/MainLoop.wav"));
+		music.play();
 	}
 
 	@Override
 	public void handleInput() {
-		// TODO Auto-generated method stub
 		player.left = Gdx.input.isKeyPressed(Keys.LEFT);
 		player.right = Gdx.input.isKeyPressed(Keys.RIGHT);
 		player.jumping = Gdx.input.isKeyPressed(Keys.UP);
-
-		System.out.println("" + player.falling);
 	}
 
 	@Override
