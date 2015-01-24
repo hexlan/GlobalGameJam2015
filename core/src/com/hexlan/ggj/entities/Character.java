@@ -2,6 +2,7 @@ package com.hexlan.ggj.entities;
 
 import java.awt.Point;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 
@@ -24,6 +25,8 @@ public abstract class Character extends Entity
 	
 	protected int fallCounter;
 	
+	public Animation animation;
+	
 	private TiledMapTileLayer collisionLayer;
 	
 	protected Character()
@@ -33,12 +36,22 @@ public abstract class Character extends Entity
 		facingRight = true;
 	}
 	
+	public void setAnimation(Animation animation){
+		this.animation = animation;
+	}
 	
 	public void setCollisionLayer(TiledMapTileLayer collisionLayer) { this.collisionLayer = collisionLayer; }
 	public void setDX(float dx) { this.dx = dx; }
 	public void setDY(float dy) { this.dy = dy; }
 	
+	public Animation getAnimation(){return animation;}
+	
+	public Texture getImage(){
+		return animation.getImage();
+	}
+	
 	public float getDX() { return dx; }
+	
 	public float getDY() { return dy; }
 	
 	private boolean hasCollisionY(int start, int stop, int y)

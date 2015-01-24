@@ -1,7 +1,9 @@
 package com.hexlan.ggj.entities;
 
+
 public class Player extends Character
 {
+
 	public Player()
 	{
 		super();
@@ -35,5 +37,6 @@ public class Player extends Character
 		getNextPosition();
 		checkCollision();
 		setPosition(xtemp, ytemp);
+		animation.update();
 	}
 }

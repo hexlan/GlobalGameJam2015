@@ -1,11 +1,9 @@
 package com.hexlan.ggj.entities;
 
-import java.awt.image.BufferedImage;
-
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.Texture;
 
 public class Animation {
-	private TextureRegion[] frames;
+	private Texture[] frames;
 	private int currentFrame;
 	private int numFrames;
 	
@@ -18,7 +16,7 @@ public class Animation {
 		timesPlayed = 0;
 	}
 	
-	public void setFrames(TextureRegion[] frames){
+	public void setFrames(Texture[] frames){
 		this.frames=frames;
 		currentFrame = 0;
 		count=0;
@@ -41,7 +39,7 @@ public class Animation {
 	}
 	public int getFrame() {return currentFrame;}
 	public int getCount() {return count;}
-	public TextureRegion getImage() { return frames[currentFrame];}
+	public Texture getImage() { return frames[currentFrame];}
 	public boolean hasPlayedOnce() {return timesPlayed >0;}
 	public boolean hasPlayed(int i) {return timesPlayed == i; }
 }
