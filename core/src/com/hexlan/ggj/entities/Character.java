@@ -20,6 +20,8 @@ public abstract class Character extends Entity
 	public boolean jumping;
 	public boolean falling;
 	
+	public boolean facingRight;
+	
 	protected int fallCounter;
 	
 	private TiledMapTileLayer collisionLayer;
@@ -27,6 +29,8 @@ public abstract class Character extends Entity
 	protected Character()
 	{
 		super();
+		
+		facingRight = true;
 	}
 	
 	

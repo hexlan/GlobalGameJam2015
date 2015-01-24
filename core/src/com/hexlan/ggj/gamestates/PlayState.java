@@ -1,11 +1,10 @@
 package com.hexlan.ggj.gamestates;
 
-import java.util.Iterator;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
@@ -13,7 +12,6 @@ import com.badlogic.gdx.maps.MapProperties;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
-import com.badlogic.gdx.maps.tiled.TiledMapTileLayer.Cell;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.hexlan.ggj.entities.Player;
@@ -45,10 +43,9 @@ public class PlayState extends GameState
         
         player = new Player();
         player.setPosition(308, 400);
-        player.setWidth(64);
+        player.setWidth(48);
         player.setHeight(64);
-        player.setWidth(64);
-        player.setHeight(64);
+        player.setTexture(new Texture("images/hero.png"));
         player.setCollisionLayer((TiledMapTileLayer) tiledMap.getLayers().get(0));
         
         sr = new ShapeRenderer();
@@ -91,12 +88,11 @@ public class PlayState extends GameState
 		camera.update();
 		tiledMapRenderer.setView(camera);
         tiledMapRenderer.render();
-        
-        sr.begin(ShapeType.Filled);
-        sr.rect(player.getX() - player.getWidth()/2 - (camera.position.x - camera.viewportWidth/2), player.getY() - player.getHeight()/2 - (camera.position.y - camera.viewportHeight/2), player.getWidth(), player.getHeight());
-		sr.end();
 		
-		sb.draw(player.getTexture(), player.getX(), player.getY());
+		sb.begin();
+		if(player.facingRight) { sb.draw(player.getTexture(), player.getX() + player.getWidth()/2 - (camera.position.x - camera.viewportWidth/2), player.getY() - player.getHeight()/2 - (camera.position.y - camera.viewportHeight/2), -player.getWidth(), player.getHeight()); }
+		else {sb.draw(player.getTexture(), player.getX() - player.getWidth()/2 - (camera.position.x - camera.viewportWidth/2), player.getY() - player.getHeight()/2 - (camera.position.y - camera.viewportHeight/2)); }
+		sb.end();
 	}
 
 }

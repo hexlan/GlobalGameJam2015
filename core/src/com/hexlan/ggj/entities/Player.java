@@ -29,6 +29,8 @@ public class Player extends Character
 	
 	public void update(float dt)
 	{
+		if(left) { facingRight = false; }
+		if(right) { facingRight = true; }
 		if(fallCounter > 0) { fallCounter--; }
 		getNextPosition();
 		checkCollision();
