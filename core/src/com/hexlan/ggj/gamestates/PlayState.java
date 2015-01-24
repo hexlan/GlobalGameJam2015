@@ -51,7 +51,7 @@ public class PlayState extends GameState
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
         
         player = new Player();
-        player.setPosition(308, 400);
+        player.setPosition(308, 6800);
         player.setWidth(48*5/4);
         player.setHeight(64*5/4);
         player.setCollisionLayer((TiledMapTileLayer) tiledMap.getLayers().get(1));

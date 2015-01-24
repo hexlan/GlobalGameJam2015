@@ -11,10 +11,10 @@ public class Player extends Character
 	private Sound jumpSound;
 	public Animation animation;
 	public ArrayList<TextureRegion[]> sprites;
-	public final int[] NUMFRAMES = { 4, 6, 1 };
-	public final int[] FRAMEWIDTHS = { 64, 72, 72 };
-	public final int[] FRAMEHEIGHTS = { 64, 72, 72 };
-	public final int[] SPRITEDELAYS = { 12, 8, -1 };
+	public final int[] NUMFRAMES = { 4, 6, 1, 1  };
+	public final int[] FRAMEWIDTHS = { 64, 72, 72, 72 };
+	public final int[] FRAMEHEIGHTS = { 64, 72, 72, 72 };
+	public final int[] SPRITEDELAYS = { 12, 8, -1, -1 };
 	
 	public static final int IDLE = 0;
 	public static final int WALKING = 1;
@@ -28,7 +28,7 @@ public class Player extends Character
 	{
 		super();
 		
-		jumpSound = Gdx.audio.newSound(Gdx.files.internal("sound/Jump.wav"));
+		jumpSound = Gdx.audio.newSound(Gdx.files.internal("sound/jump.wav"));
 	}
 	
 	private void getNextPosition()
@@ -68,7 +68,7 @@ public class Player extends Character
 			}
 			else if (dy < 0 && fallCounter < 1)
 			{
-				//currentAction = FALLING;
+				currentAction = FALLING;
 			}
 		}
 	}

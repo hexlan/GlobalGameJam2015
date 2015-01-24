@@ -1,129 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="48" tileheight="48" nextobjectid="3">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="144" height="144" tilewidth="48" tileheight="48" nextobjectid="1">
  <tileset firstgid="1" name="TileSheet" tilewidth="48" tileheight="48">
   <image source="TileSheet.png" width="240" height="240"/>
   <tile id="0">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="1">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="2">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="3">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="4">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="5">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="6">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="7">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="8">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="9">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="10">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="11">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="12">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="13">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="14">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="15">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="16">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="17">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="18">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="19">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
   <tile id="20">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
- </tileset>
- <tileset firstgid="26" name="TorchTile" tilewidth="48" tileheight="48">
-  <image source="TorchTile.png" width="48" height="48"/>
-  <tile id="0">
+  <tile id="22">
    <properties>
-    <property name="torch" value=""/>
+    <property name="blocked" value="blocked"/>
    </properties>
   </tile>
  </tileset>
- <layer name="Objects" width="30" height="30">
+ <layer name="Objects" width="144" height="144">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2D4Ayk0mpD4KBh4MBono2AUjILBCHDVI6MAP5DCwR4Fo4AYQG57bbSdRxwAAL2JAVM=
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgaRA8AAQ==
   </data>
  </layer>
- <layer name="Tile Layer 1" width="30" height="30">
+ <layer name="Tile Layer 1" width="144" height="144">
   <data encoding="base64" compression="zlib">
-   eJztlt0KgCAMRtcPWVRQGb3/o6aEN6FswadJdnGuD9vcPjURTYlZDb3hSEz3e4Oowur9incz1GAagXcBMwh6aL0KTE7e+w5abwtGWq8m/N2fBd4S9reia8/2xN6R0uRvKEtKme9Tr7sJudbr3iuXE2ive6/cHcl1vr6+cdmK8PryCtEfzuubF3fzEd635hvTG+Nfx2Hz6AS6wT2g
+   eJzt3elu01AURWGXFjowtKoQ7/+oJGotmeDh3Mn7bnv9WBJQmx6cr85NYpK7YRi+GHfXwQxnnf/+0rdLf4xjfl1P5vO7H3/3+fGjb2n+rwbhR5/z/PjR5zw/fvQ5z48ffdf55x4bq+eKhB99zvPjR190/h7PT/jR5zw/fvTVnn/P8xR+9DnPjx99qvlrnKfwo895fvzoc54fP/p6nD9634YffQ7zLznCjz7n+fGjz3l+/Ohznh8/+pznx4++yPzRx0OR7VKuFdn6/xf40ec8P370Oc+PH33O8+NHn/P8+NE3d/2zeqZo+NHnPD9+9G3N3/O5CT/6as6/9DxNdJ/U74cffc7z40dfj/NHz0n40ec8P370Oc+PH33O8+NHn8v8c4/p8FO38b0w703nTw0/9Wd5/DyuNeZPef5m6/ukXOuDH03fL/249LNwfvX7GuLHp+n8qbdfi/ATK2etkrNPq/lbhZ/4fjlrldR9Ws3fqlQ/6nlVxz9nrZKzT2T+ntY7+PGqt/kd/dRcV7RYo5wpRz811xUt1ih7337qzuynxRplbz/qGaI9fbb2fwzHbWt+btTtZ179Hj78vFf4u1waj6vr/GNrP/MvK1/rpd7WnznzPxqHH/38agP4+cjxvuDofh42+lV4+9f0s+e56LHi/GoDrfxEet7xNsNPf+EHP/jBD37a+4m+tjHdbukxRImf6fHHj4+f6PPc0+1ehnkrW36iVvHj4yf62sZ0u9zzT6pV10r9vO3UktO5539qvvae6ydq9ex+9irip8Vr7y3WP/jp00+L197n/IzHDj/H8tPi8Xvk/FNyv4kf/JTcb+LHw0/uOSLy+L3kfhM/Hn5yzxGsn4/hZ+34R/wsnSO2HJT4iZzz8OPhJ7cSP5FzHn7O52c8dlv7RtZF+NH1MNT3c+uC9c8x/TxMjn9NP7flvn661nRdhB+dnb38zP15iZ/pugg/Ojut/VyPT4vXL6brIvzo7LT2c431zzH8zNnBjz4HP0t2Uv3sff0qzx/qW7OT6mfP61ej3w8/Ojupfva8fjX6/fCjs7PkJ3LbRmP94+cnamfJT83WHr/XuN4aPzo7Kj+joRrXW5/Fz6/h//dOmLvt195XYfr1udsl1Y7aT43rrc/g52rh9vqtueu5Xja+/ryw7do+qX5S7lMi27Z4/etMfl4Xbtte/aTcp0S2zVk/pxg+sp/nhV/37CflPiWybY6fHMOuLf0bb4+bi5/U/bfK8ZNi+Ih+5tax+PnXzpqf1PnVBmr6Wfp5O5uf8fi0fg/II/l5HZb/nfip1xmvP3yb+f1cJV/vyc+a89K4/rCfSv2Mx6HEz9rxndue6w/7Se1nbd/o/GoD+Fn3s2VkrTU/pXbw41Gpn9v9S/4+/JwrHr/jBz9t/ag/Q+Ta1mefTI95yn69N372mWvu5x/3n1/38EP4IaWf0vvwpdt2j/UDfvR+1OcQzj++4YfwQ/jBj2P4IfwQfvDjGH4IP4Qf/DiGH8IP4Qc/juGH8EP4wY9j+CH8EH7w4xh+CD+EH/w4hh/CD+EHP47hh/BD+MGPY/gh/BB+8OMYfgg/hB/8OIYfwg/hBz+O4YfwQ/jBj2P4IfyQqvdB/xlGZ/78I/f+ArNJAcg=
   </data>
  </layer>
 </map>
