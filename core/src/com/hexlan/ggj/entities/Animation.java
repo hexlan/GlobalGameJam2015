@@ -1,9 +1,9 @@
 package com.hexlan.ggj.entities;
 
-import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public class Animation {
-	private Texture[] frames;
+	private TextureRegion[] frames;
 	private int currentFrame;
 	private int numFrames;
 	
@@ -16,7 +16,7 @@ public class Animation {
 		timesPlayed = 0;
 	}
 	
-	public void setFrames(Texture[] frames){
+	public void setFrames(TextureRegion[] frames){
 		this.frames=frames;
 		currentFrame = 0;
 		count=0;
@@ -31,15 +31,21 @@ public class Animation {
 	public void update() {
 		if(delay == -1) return;
 		count++;
-		if(count == delay) {
-			currentFrame = 0;
-			timesPlayed++;
+		if(count == delay) 
+		{
+			currentFrame++;
+			count = 0;
+			if(currentFrame == numFrames)
+			{
+				currentFrame = 0;
+				timesPlayed++;
+			}
 			
 		}
 	}
 	public int getFrame() {return currentFrame;}
 	public int getCount() {return count;}
-	public Texture getImage() { return frames[currentFrame];}
+	public TextureRegion getImage() { return frames[currentFrame];}
 	public boolean hasPlayedOnce() {return timesPlayed >0;}
 	public boolean hasPlayed(int i) {return timesPlayed == i; }
 }
