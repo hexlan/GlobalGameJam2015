@@ -95,6 +95,8 @@ public class PlayState extends GameState
         sr.begin(ShapeType.Filled);
         sr.rect(player.getX() - player.getWidth()/2 - (camera.position.x - camera.viewportWidth/2), player.getY() - player.getHeight()/2 - (camera.position.y - camera.viewportHeight/2), player.getWidth(), player.getHeight());
 		sr.end();
+		
+		sb.draw(player.getTexture(), player.getX(), player.getY());
 	}
 
 }

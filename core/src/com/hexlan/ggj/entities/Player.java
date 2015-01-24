@@ -23,7 +23,7 @@ public class Player extends Character
 		if(falling) 
 		{
 			dy -= 0.85f;
-			if(dy > 0 && jumping) dy += 0.3f;
+			if(dy > 0 && jumping) dy += 0.31f;
 		}
 	}
 	
