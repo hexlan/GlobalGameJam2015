@@ -5,11 +5,10 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.hexlan.ggj.Game;
 
 public class DesktopLauncher {
-	public static void main (String[] arg) 
-	{
+	public static void main(String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		new LwjglApplication(new Game(), config);
-		
+
 		config.width = Game.WIDTH;
 		config.height = Game.HEIGHT;
 	}
