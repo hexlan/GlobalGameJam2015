@@ -159,6 +159,8 @@ public abstract class Character extends Entity
 			if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("blocked")) { return true; }
 			cell = hazardLayer.getCell(x, row);
 			if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("blocks1")) { return true; }
+			if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("blocks2")) { return true; }
+			if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("blocks3")) { return true; }
 		}
 		
 		return false;

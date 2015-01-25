@@ -38,6 +38,7 @@ public class PlayState extends GameState
 	private Texture spikes;
 	private Texture treasure;
 	private Texture block;
+	private Texture banner;
 	
 	ShapeRenderer sr;
 	public static boolean pause = false;
@@ -113,6 +114,7 @@ public class PlayState extends GameState
 		spikes = new Texture("images/Spikes.png");
 		treasure = new Texture("maps/Treasure.png");
 		block = new Texture("images/Block.png");
+		banner = new Texture("maps/banner.png");
 		
 		arrows = new ArrayList<Arrow>();
 	}
@@ -121,14 +123,9 @@ public class PlayState extends GameState
 	public void handleInput() {
 		if(!pause)
 		{
-		player.left = Gdx.input.isKeyPressed(Keys.LEFT) || Gdx.input.isKeyPressed(Keys.A);
-		player.right = Gdx.input.isKeyPressed(Keys.RIGHT) || Gdx.input.isKeyPressed(Keys.D);
-		player.jumping = Gdx.input.isKeyPressed(Keys.UP) || Gdx.input.isKeyPressed(Keys.W);
-		
-		if(Gdx.input.isKeyPressed(Keys.ENTER)) 
-		{ 
-			player.respawn();
-		}
+			player.left = Gdx.input.isKeyPressed(Keys.LEFT) || Gdx.input.isKeyPressed(Keys.A);
+			player.right = Gdx.input.isKeyPressed(Keys.RIGHT) || Gdx.input.isKeyPressed(Keys.D);
+			player.jumping = Gdx.input.isKeyPressed(Keys.UP) || Gdx.input.isKeyPressed(Keys.W);
 		}
 		
 		
@@ -245,6 +242,10 @@ public class PlayState extends GameState
         		if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("treasure4"))
         		{
         			sb.draw(treasure, x*objects.getTileWidth() - (camera.position.x - camera.viewportWidth/2), y*objects.getTileHeight() - (camera.position.y - camera.viewportHeight/2));
+        		}
+        		if(cell != null && cell.getTile() != null && cell.getTile().getProperties().containsKey("banner"))
+        		{
+        			sb.draw(banner, x*objects.getTileWidth() - (camera.position.x - camera.viewportWidth/2), y*objects.getTileHeight() - (camera.position.y - camera.viewportHeight/2)-48);
         		}
             }
         }

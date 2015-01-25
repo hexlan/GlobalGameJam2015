@@ -173,9 +173,17 @@
  <tileset firstgid="37" name="Escape" tilewidth="48" tileheight="48">
   <image source="Escape.png" width="48" height="96"/>
  </tileset>
+ <tileset firstgid="39" name="Banner" tilewidth="48" tileheight="48">
+  <image source="Banner.png" width="48" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="banner" value=""/>
+   </properties>
+  </tile>
+ </tileset>
  <layer name="Objects" width="144" height="144">
   <data encoding="base64" compression="zlib">
-   eJzt3VtqwkAAhlEfu4I+2Iug7n+NpdBCa2tM8kfndg6ECkY6li+TMBWz28HYnkoPgKbp53EOpQdwB/ohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8SNfWzLz0AFqupn7fSA2CxmvqhPb338zKxzdlnzn4jW9vPmmsV1zf96X3+4b70M7b9xc+l9DOuy2bWNHTZj2uU8bwGr215/jmVHsDGpo7dW3NFieP+WOB3bqm3flqjHxJT/dxaUyu5ffuvn9JjW/oephx37R/jNTrtzD0AAEDf/G+DVky12uN9aGF0W52fnOcAGIHzHTDFHAGMxJwHAKR6uZ7o5X0AcJ25HujB3LnM54ja5u8OQCsecc56/tq24jwLddhfeTz3eajBkjZ1TI10CQAA23F9DZlb3yedPg8AAPyV3L/yvOVAaE56Dzr98Ol95evm9JPe46r0PbTInX9sAAAAAAAAAAAAQP2ufe9cqcfAOOZ+3nvOflvtAwAAAPxWw5qh9UMY05brh3P3s4YIAAAAy9SwZmj9EMZRYs1wzb4AAAA9qWHNx/oPjOkeazfJGs9hxWuA+nwAb1EiTA==
+   eJzt3d1O20AQBtBc9gl6kbYgARK8/xNWiCKlK8deZ3a9Pz5HsmKIQzbwxZ6MjX25wLn9aD0AhiY/x3luPYAK5IcI+SFCfoiQHyLkhwj5IeIM+Xm/M0/cGfLzcWeeuDPkh3rkhwj5IUJ+iJAfIuSHCPkhQn6IkB8i5IcI+SFCfvKl+17ti5WfPdJ9r/bFyg8x8kOE/BAhP0TIDxHyQ4T8fFnq5ejvbJOfL0u9HP2dbfJDhPwQIT9E9JSfa+sBsFtP+fnTegDs1lN+fF4eT8n8vCe3e9X4vPxrZcpZJme5M3s0P0u1ykdym/MYxtbT9ovx5ORHXTKva3K7V05+9PHnlGbmkQyl+VGjnM/vzOWWtkMj1z+vrQdQyPffZe29u7WuuP26Vr2RbodeKj3PUWbJT+n64Kh6Q36IWMvPVk+t5fRtKT+tx7b3Nax5uYz/Hu/R68W6BwAAmJt9G4xiLaszXocWzq7U9qnEz3HMERGOOQKO4HMdsKbmOkKtTIRamRrURUAr6iIi1EV9maWemOV1AONRFx1nxnW9ugjOJ3dd1tNxROzn905voufGjDwn49s6N2bN56S+I7ZZP/9NpdjOQh+ud+Zz7x+R+mY+e7IZzbH6hhpmWb8C41EXEaEuAnqlvoaYrfNJR++fmfqaCPU1AJxTes2xa/L9HG/lhsNgPmvIpWvQ7akt5YdPTw8+Lic/0Wtctb6GFnFvNxMAAAAAAAAAAADQn/T49XvnnWs1T9/8byQl5R7vnbNcqWUAAACA//XQM0z7h87/RoQe5zhK9g9zl9NDBAAAgH166Bk6/rB/erpE3PZ0W/QMH1kWAABgJj30fPR/4Jxq9G4iPZ7nBx4D9OcvU5oq8A==
   </data>
  </layer>
  <layer name="Tile Layer 1" width="144" height="144">
