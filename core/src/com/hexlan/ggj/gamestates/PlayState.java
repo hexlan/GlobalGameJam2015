@@ -126,6 +126,7 @@ public class PlayState extends GameState
 			player.left = Gdx.input.isKeyPressed(Keys.LEFT) || Gdx.input.isKeyPressed(Keys.A);
 			player.right = Gdx.input.isKeyPressed(Keys.RIGHT) || Gdx.input.isKeyPressed(Keys.D);
 			player.jumping = Gdx.input.isKeyPressed(Keys.UP) || Gdx.input.isKeyPressed(Keys.W);
+
 		}
 		
 		
@@ -261,6 +262,8 @@ public class PlayState extends GameState
 			Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 			if(pauseCounter >= 1.0)
 			{
+				pause = false;
+				GSM.shaking = false;
 				gsm.set(new CreditsState(gsm));
 			}
 		}

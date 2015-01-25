@@ -6,8 +6,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.hexlan.ggj.gamestates.CreditsState;
 import com.hexlan.ggj.gamestates.GameState;
+import com.hexlan.ggj.gamestates.MenuState;
 
 public class GSM {
 
