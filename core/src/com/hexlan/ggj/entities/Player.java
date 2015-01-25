@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Player extends Character
 {
 	private Sound jumpSound;
+	
 	public Animation animation;
 	public ArrayList<TextureRegion[]> sprites;
 	public final int[] NUMFRAMES = { 4, 6, 1, 1  };
@@ -29,6 +30,7 @@ public class Player extends Character
 		super();
 		
 		jumpSound = Gdx.audio.newSound(Gdx.files.internal("sound/jump.wav"));
+		
 	}
 	
 	private void getNextPosition()
@@ -73,6 +75,8 @@ public class Player extends Character
 		}
 	}
 	
+	
+	
 	public void update(float dt)
 	{
 		if(left) { facingRight = false; }
@@ -82,6 +86,7 @@ public class Player extends Character
 		checkCollision();
 		setPosition(xtemp, ytemp);
 		animation.update();
+		hazardCollision();
 		
 		if(currentAction != prevAction)
 		{

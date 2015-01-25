@@ -113,14 +113,74 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="26" name="TorchTile" tilewidth="48" tileheight="48">
+  <image source="TorchTile.png" width="48" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="torch" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="27" name="Spikes" tilewidth="48" tileheight="48">
+  <image source="Spikes.png" width="48" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="spike" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="28" name="TreasureChests" tilewidth="48" tileheight="48">
+  <image source="TreasureChests.png" width="144" height="96"/>
+  <tile id="0">
+   <properties>
+    <property name="treasure1" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="treasure2" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="treasure3" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="treasure4" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="34" name="Blocks" tilewidth="48" tileheight="48">
+  <image source="Blocks.png" width="144" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="blocks1" value="locked"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="blocks2" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="blocks3" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="Escape" tilewidth="48" tileheight="48">
+  <image source="Escape.png" width="48" height="96"/>
+ </tileset>
  <layer name="Objects" width="144" height="144">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgaRA8AAQ==
+   eJzt3VtqwkAAhlEfu4I+2Iug7n+NpdBCa2tM8kfndg6ECkY6li+TMBWz28HYnkoPgKbp53EOpQdwB/ohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8S+iGhHxL6IaEfEvohoR8SNfWzLz0AFqupn7fSA2CxmvqhPb338zKxzdlnzn4jW9vPmmsV1zf96X3+4b70M7b9xc+l9DOuy2bWNHTZj2uU8bwGr215/jmVHsDGpo7dW3NFieP+WOB3bqm3flqjHxJT/dxaUyu5ffuvn9JjW/oephx37R/jNTrtzD0AAEDf/G+DVky12uN9aGF0W52fnOcAGIHzHTDFHAGMxJwHAKR6uZ7o5X0AcJ25HujB3LnM54ja5u8OQCsecc56/tq24jwLddhfeTz3eajBkjZ1TI10CQAA23F9DZlb3yedPg8AAPyV3L/yvOVAaE56Dzr98Ol95evm9JPe46r0PbTInX9sAAAAAAAAAAAAQP2ufe9cqcfAOOZ+3nvOflvtAwAAAPxWw5qh9UMY05brh3P3s4YIAAAAy9SwZmj9EMZRYs1wzb4AAAA9qWHNx/oPjOkeazfJGs9hxWuA+nwAb1EiTA==
   </data>
  </layer>
  <layer name="Tile Layer 1" width="144" height="144">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
 </map>
