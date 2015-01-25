@@ -6,8 +6,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.hexlan.ggj.gamestates.CreditsState;
 import com.hexlan.ggj.gamestates.GameState;
-import com.hexlan.ggj.gamestates.PlayState;
 
 public class GSM {
 
@@ -23,7 +23,8 @@ public class GSM {
 	
 	public GSM() {
 		states = new Stack<GameState>();
-		states.push(new PlayState(this));
+		states.push(new MenuState(this));
+		//states.push(new CreditsState(this));
 		
 		mainMusic = Gdx.audio.newMusic(Gdx.files.internal("sound/MainLoop.wav"));
 		fastMusic = Gdx.audio.newMusic(Gdx.files.internal("sound/fast.wav"));
@@ -44,7 +45,7 @@ public class GSM {
 	
 	public static void creditMusic()
 	{
-		mainMusic.setLooping(false);
+		mainMusic.setLooping(true);
 		
 		mainMusic.play();
 	}
